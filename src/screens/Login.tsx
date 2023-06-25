@@ -13,21 +13,14 @@ const Heading = styled(Text)`
   margin-bottom: 16px;
   font-weight: bold;
 `
-const BoyScreen: React.FC = () => {
+const LoginScreen: React.FC = () => {
   return (
     <>
-      <Header centerComponent={{ text: 'Cho bạn nam 👦', style: { color: '#fff' } }} />
-
       <Page>
-        <Heading>
-          {`Mã số của bạn: là 110234.`}
-        </Heading>
-        <Button
-          title="Bấm để lấy mã số"
-        />
+
       </Page>
     </>
   )
 }
 
-export default BoyScreen
+export default LoginScreen
