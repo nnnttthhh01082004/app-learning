@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import HomeScreen from "./src/screens/HomeScreen";
 import { ThemeProvider } from 'react-native-elements'
 
+
+
 export default function App() {
   return (
     <SafeAreaProvider>
@@ -17,4 +19,7 @@ export default function App() {
     </SafeAreaProvider>
   );
 }
+
+//
+
 

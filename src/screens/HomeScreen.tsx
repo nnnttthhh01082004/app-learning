@@ -6,6 +6,7 @@ import GirlScreen from './GirlScreen'
 import LoginScreen from './Login'
 import RegisterScreen from './Register'
 import ProfileScreen from './Profile'
+import MyProfileScreen from './MyProfile'
 
 const Tab = createBottomTabNavigator()
 
@@ -27,6 +28,11 @@ const HomeScreen: React.FC = () => {
         name="PROFILE"
         options={{ tabBarIcon: () => <Text>👧</Text> }}
         component={ProfileScreen}
+      />
+      <Tab.Screen
+        name="My Profile"
+        options={{ tabBarIcon: () => <Text>👧</Text> }}
+        component={MyProfileScreen}
       />
     </Tab.Navigator>
   )
