@@ -20,7 +20,7 @@ const BoyScreen: React.FC = () => {
 
       <Page>
         <Heading>
-          {`Mã số của bạn là 10.`}
+          {`Mã số của bạn: là 110234.`}
         </Heading>
         <Button
           title="Bấm để lấy mã số"

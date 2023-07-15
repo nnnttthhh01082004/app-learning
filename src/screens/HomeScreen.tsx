@@ -3,6 +3,9 @@ import { Text, View } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import BoyScreen from './BoyScreen'
 import GirlScreen from './GirlScreen'
+import LoginScreen from './Login'
+import RegisterScreen from './Register'
+import MyProfileScreen from './MyProfile'
 
 const Tab = createBottomTabNavigator()
 
@@ -10,14 +13,20 @@ const HomeScreen: React.FC = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen
-        name="Gấu cái"
+        name="LOGIN"
         options={{ tabBarIcon: () => <Text>👧</Text> }}
-        component={GirlScreen}
+        component={LoginScreen}
       />
       <Tab.Screen
-        name="Gấu đực"
+        name="REGISTER"
         options={{ tabBarIcon: () => <Text>👦</Text> }}
-        component={BoyScreen}
+        component={RegisterScreen}
+      />
+
+      <Tab.Screen
+        name="My Profile"
+        options={{ tabBarIcon: () => <Text>👧</Text> }}
+        component={MyProfileScreen}
       />
     </Tab.Navigator>
   )
